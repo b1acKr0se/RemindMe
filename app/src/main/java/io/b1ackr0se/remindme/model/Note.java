@@ -3,10 +3,19 @@ package io.b1ackr0se.remindme.model;
 import android.graphics.Bitmap;
 
 public class Note {
+    private int id;
     private String content;
-    private Bitmap image;
+    private String image;
     private String date;
     private boolean isPending;
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
 
     public String getContent() {
         return content;
@@ -16,11 +25,11 @@ public class Note {
         this.content = content;
     }
 
-    public Bitmap getImage() {
+    public String getImage() {
         return image;
     }
 
-    public void setImage(Bitmap image) {
+    public void setImage(String image) {
         this.image = image;
     }
 
@@ -36,7 +45,7 @@ public class Note {
         return isPending;
     }
 
-    public void setIsPending(boolean isPending) {
+    public void setPending(boolean isPending) {
         this.isPending = isPending;
     }
 

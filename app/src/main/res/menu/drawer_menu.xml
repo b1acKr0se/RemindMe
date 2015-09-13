@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/fragment"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/pending"
+            android:icon="@drawable/ic_schedule_black_24dp"
+            android:title="@string/pending"
+            android:checked="true"/>
+        <item
+            android:id="@+id/done"
+            android:icon="@drawable/ic_done_black_24dp"
+            android:title="@string/done" />
+        <item
+            android:id="@+id/all"
+            android:icon="@drawable/ic_view_headline_black_24dp"
+            android:title="@string/all" />
+    </group>
+    <item
+        android:id="@+id/settings"
+        android:title="@string/settings"
+        android:icon="@drawable/ic_settings_black_24dp"/>
+
+</menu>
